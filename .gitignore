@@ -13,6 +13,7 @@ test_data/
 test_dataset/
 data/models/smplx/
 data/network_weights/
+data/checkpoints/model.ckpt
 
 
 # OS
