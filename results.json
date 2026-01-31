@@ -1,0 +1,602 @@
+[
+  {
+    "prediction": "AI-Generated",
+    "predicted_class": 1,
+    "confidence": 98.66965413093567,
+    "prob_real": 1.3303385116159916,
+    "prob_fake": 98.66965413093567,
+    "num_frames_analyzed": 39,
+    "video_name": "04bb67b4-bc42-5706-b498-b830c881eea9",
+    "param_file": ".\\processed_test_videos\\fake\\04bb67b4-bc42-5706-b498-b830c881eea9\\all_frame_params.npz"
+  },
+  {
+    "prediction": "AI-Generated",
+    "predicted_class": 1,
+    "confidence": 99.87807869911194,
+    "prob_real": 0.12192067224532366,
+    "prob_fake": 99.87807869911194,
+    "num_frames_analyzed": 39,
+    "video_name": "4bfc2adf-67d4-50bd-8c9d-9e6868769cd4",
+    "param_file": ".\\processed_test_videos\\fake\\4bfc2adf-67d4-50bd-8c9d-9e6868769cd4\\all_frame_params.npz"
+  },
+  {
+    "prediction": "AI-Generated",
+    "predicted_class": 1,
+    "confidence": 96.96967601776123,
+    "prob_real": 3.030329756438732,
+    "prob_fake": 96.96967601776123,
+    "num_frames_analyzed": 6,
+    "video_name": "output-2024-01-24T222906.474",
+    "param_file": ".\\processed_test_videos\\fake\\output-2024-01-24T222906.474\\all_frame_params.npz"
+  },
+  {
+    "prediction": "AI-Generated",
+    "predicted_class": 1,
+    "confidence": 95.58059573173523,
+    "prob_real": 4.419408738613129,
+    "prob_fake": 95.58059573173523,
+    "num_frames_analyzed": 6,
+    "video_name": "output-2024-01-24T222911.438",
+    "param_file": ".\\processed_test_videos\\fake\\output-2024-01-24T222911.438\\all_frame_params.npz"
+  },
+  {
+    "prediction": "AI-Generated",
+    "predicted_class": 1,
+    "confidence": 92.59808659553528,
+    "prob_real": 7.401914894580841,
+    "prob_fake": 92.59808659553528,
+    "num_frames_analyzed": 6,
+    "video_name": "output-2024-01-24T222947.607",
+    "param_file": ".\\processed_test_videos\\fake\\output-2024-01-24T222947.607\\all_frame_params.npz"
+  },
+  {
+    "prediction": "AI-Generated",
+    "predicted_class": 1,
+    "confidence": 96.57941460609436,
+    "prob_real": 3.4205831587314606,
+    "prob_fake": 96.57941460609436,
+    "num_frames_analyzed": 6,
+    "video_name": "output-2024-01-24T222950.076",
+    "param_file": ".\\processed_test_videos\\fake\\output-2024-01-24T222950.076\\all_frame_params.npz"
+  },
+  {
+    "prediction": "AI-Generated",
+    "predicted_class": 1,
+    "confidence": 97.09463119506836,
+    "prob_real": 2.905375696718693,
+    "prob_fake": 97.09463119506836,
+    "num_frames_analyzed": 6,
+    "video_name": "output-2024-01-24T222955.777",
+    "param_file": ".\\processed_test_videos\\fake\\output-2024-01-24T222955.777\\all_frame_params.npz"
+  },
+  {
+    "prediction": "AI-Generated",
+    "predicted_class": 1,
+    "confidence": 97.09463119506836,
+    "prob_real": 2.905375696718693,
+    "prob_fake": 97.09463119506836,
+    "num_frames_analyzed": 6,
+    "video_name": "output-2024-01-24T222957.463",
+    "param_file": ".\\processed_test_videos\\fake\\output-2024-01-24T222957.463\\all_frame_params.npz"
+  },
+  {
+    "prediction": "AI-Generated",
+    "predicted_class": 1,
+    "confidence": 97.13147282600403,
+    "prob_real": 2.868524193763733,
+    "prob_fake": 97.13147282600403,
+    "num_frames_analyzed": 6,
+    "video_name": "output-2024-01-24T222959.777",
+    "param_file": ".\\processed_test_videos\\fake\\output-2024-01-24T222959.777\\all_frame_params.npz"
+  },
+  {
+    "prediction": "AI-Generated",
+    "predicted_class": 1,
+    "confidence": 97.13947772979736,
+    "prob_real": 2.860523760318756,
+    "prob_fake": 97.13947772979736,
+    "num_frames_analyzed": 6,
+    "video_name": "output-2024-01-24T223010.602",
+    "param_file": ".\\processed_test_videos\\fake\\output-2024-01-24T223010.602\\all_frame_params.npz"
+  },
+  {
+    "prediction": "AI-Generated",
+    "predicted_class": 1,
+    "confidence": 97.26320505142212,
+    "prob_real": 2.7367912232875824,
+    "prob_fake": 97.26320505142212,
+    "num_frames_analyzed": 6,
+    "video_name": "output-2024-01-24T223025.698",
+    "param_file": ".\\processed_test_videos\\fake\\output-2024-01-24T223025.698\\all_frame_params.npz"
+  },
+  {
+    "prediction": "AI-Generated",
+    "predicted_class": 1,
+    "confidence": 97.05193042755127,
+    "prob_real": 2.9480719938874245,
+    "prob_fake": 97.05193042755127,
+    "num_frames_analyzed": 6,
+    "video_name": "output-2024-01-24T223043.498",
+    "param_file": ".\\processed_test_videos\\fake\\output-2024-01-24T223043.498\\all_frame_params.npz"
+  },
+  {
+    "prediction": "AI-Generated",
+    "predicted_class": 1,
+    "confidence": 97.15786576271057,
+    "prob_real": 2.8421392664313316,
+    "prob_fake": 97.15786576271057,
+    "num_frames_analyzed": 6,
+    "video_name": "output-2024-01-24T223109.236",
+    "param_file": ".\\processed_test_videos\\fake\\output-2024-01-24T223109.236\\all_frame_params.npz"
+  },
+  {
+    "prediction": "AI-Generated",
+    "predicted_class": 1,
+    "confidence": 97.2162663936615,
+    "prob_real": 2.7837270870804787,
+    "prob_fake": 97.2162663936615,
+    "num_frames_analyzed": 6,
+    "video_name": "output-2024-01-24T223114.627",
+    "param_file": ".\\processed_test_videos\\fake\\output-2024-01-24T223114.627\\all_frame_params.npz"
+  },
+  {
+    "prediction": "AI-Generated",
+    "predicted_class": 1,
+    "confidence": 97.24430441856384,
+    "prob_real": 2.7556905522942543,
+    "prob_fake": 97.24430441856384,
+    "num_frames_analyzed": 6,
+    "video_name": "output-2024-01-24T223220.141",
+    "param_file": ".\\processed_test_videos\\fake\\output-2024-01-24T223220.141\\all_frame_params.npz"
+  },
+  {
+    "prediction": "AI-Generated",
+    "predicted_class": 1,
+    "confidence": 90.87873697280884,
+    "prob_real": 9.121264517307281,
+    "prob_fake": 90.87873697280884,
+    "num_frames_analyzed": 6,
+    "video_name": "output-2024-01-24T223224.172",
+    "param_file": ".\\processed_test_videos\\fake\\output-2024-01-24T223224.172\\all_frame_params.npz"
+  },
+  {
+    "prediction": "AI-Generated",
+    "predicted_class": 1,
+    "confidence": 97.31993675231934,
+    "prob_real": 2.6800649240612984,
+    "prob_fake": 97.31993675231934,
+    "num_frames_analyzed": 6,
+    "video_name": "output-2024-01-24T223248.978",
+    "param_file": ".\\processed_test_videos\\fake\\output-2024-01-24T223248.978\\all_frame_params.npz"
+  },
+  {
+    "prediction": "AI-Generated",
+    "predicted_class": 1,
+    "confidence": 96.81339859962463,
+    "prob_real": 3.1866002827882767,
+    "prob_fake": 96.81339859962463,
+    "num_frames_analyzed": 6,
+    "video_name": "output-2024-01-24T223254.156",
+    "param_file": ".\\processed_test_videos\\fake\\output-2024-01-24T223254.156\\all_frame_params.npz"
+  },
+  {
+    "prediction": "AI-Generated",
+    "predicted_class": 1,
+    "confidence": 96.95478081703186,
+    "prob_real": 3.045215830206871,
+    "prob_fake": 96.95478081703186,
+    "num_frames_analyzed": 6,
+    "video_name": "output-2024-01-24T223257.078",
+    "param_file": ".\\processed_test_videos\\fake\\output-2024-01-24T223257.078\\all_frame_params.npz"
+  },
+  {
+    "prediction": "AI-Generated",
+    "predicted_class": 1,
+    "confidence": 97.21857905387878,
+    "prob_real": 2.781417593359947,
+    "prob_fake": 97.21857905387878,
+    "num_frames_analyzed": 6,
+    "video_name": "output-2024-01-24T223318.145",
+    "param_file": ".\\processed_test_videos\\fake\\output-2024-01-24T223318.145\\all_frame_params.npz"
+  },
+  {
+    "prediction": "AI-Generated",
+    "predicted_class": 1,
+    "confidence": 96.82972431182861,
+    "prob_real": 3.170272335410118,
+    "prob_fake": 96.82972431182861,
+    "num_frames_analyzed": 6,
+    "video_name": "output-2024-01-24T223405.416",
+    "param_file": ".\\processed_test_videos\\fake\\output-2024-01-24T223405.416\\all_frame_params.npz"
+  },
+  {
+    "prediction": "AI-Generated",
+    "predicted_class": 1,
+    "confidence": 64.5526111125946,
+    "prob_real": 35.447391867637634,
+    "prob_fake": 64.5526111125946,
+    "num_frames_analyzed": 6,
+    "video_name": "output-2024-01-24T223440.167",
+    "param_file": ".\\processed_test_videos\\fake\\output-2024-01-24T223440.167\\all_frame_params.npz"
+  },
+  {
+    "prediction": "AI-Generated",
+    "predicted_class": 1,
+    "confidence": 96.60168290138245,
+    "prob_real": 3.398313745856285,
+    "prob_fake": 96.60168290138245,
+    "num_frames_analyzed": 6,
+    "video_name": "output-2024-01-24T223446.732",
+    "param_file": ".\\processed_test_videos\\fake\\output-2024-01-24T223446.732\\all_frame_params.npz"
+  },
+  {
+    "prediction": "AI-Generated",
+    "predicted_class": 1,
+    "confidence": 87.08420991897583,
+    "prob_real": 12.91578859090805,
+    "prob_fake": 87.08420991897583,
+    "num_frames_analyzed": 6,
+    "video_name": "output-2024-01-24T223505.134",
+    "param_file": ".\\processed_test_videos\\fake\\output-2024-01-24T223505.134\\all_frame_params.npz"
+  },
+  {
+    "prediction": "AI-Generated",
+    "predicted_class": 1,
+    "confidence": 97.22141623497009,
+    "prob_real": 2.778587117791176,
+    "prob_fake": 97.22141623497009,
+    "num_frames_analyzed": 6,
+    "video_name": "output-2024-01-24T223525.340",
+    "param_file": ".\\processed_test_videos\\fake\\output-2024-01-24T223525.340\\all_frame_params.npz"
+  },
+  {
+    "prediction": "AI-Generated",
+    "predicted_class": 1,
+    "confidence": 97.1418559551239,
+    "prob_real": 2.858146093785763,
+    "prob_fake": 97.1418559551239,
+    "num_frames_analyzed": 6,
+    "video_name": "output-2024-01-24T223534.607",
+    "param_file": ".\\processed_test_videos\\fake\\output-2024-01-24T223534.607\\all_frame_params.npz"
+  },
+  {
+    "prediction": "AI-Generated",
+    "predicted_class": 1,
+    "confidence": 97.30513095855713,
+    "prob_real": 2.6948755607008934,
+    "prob_fake": 97.30513095855713,
+    "num_frames_analyzed": 6,
+    "video_name": "output-2024-01-24T223659.664",
+    "param_file": ".\\processed_test_videos\\fake\\output-2024-01-24T223659.664\\all_frame_params.npz"
+  },
+  {
+    "prediction": "AI-Generated",
+    "predicted_class": 1,
+    "confidence": 97.29674458503723,
+    "prob_real": 2.7032537385821342,
+    "prob_fake": 97.29674458503723,
+    "num_frames_analyzed": 6,
+    "video_name": "output-2024-01-24T223731.506",
+    "param_file": ".\\processed_test_videos\\fake\\output-2024-01-24T223731.506\\all_frame_params.npz"
+  },
+  {
+    "prediction": "AI-Generated",
+    "predicted_class": 1,
+    "confidence": 97.2632348537445,
+    "prob_real": 2.7367668226361275,
+    "prob_fake": 97.2632348537445,
+    "num_frames_analyzed": 6,
+    "video_name": "output-2024-01-24T223827.479",
+    "param_file": ".\\processed_test_videos\\fake\\output-2024-01-24T223827.479\\all_frame_params.npz"
+  },
+  {
+    "prediction": "AI-Generated",
+    "predicted_class": 1,
+    "confidence": 96.93729281425476,
+    "prob_real": 3.0627064406871796,
+    "prob_fake": 96.93729281425476,
+    "num_frames_analyzed": 6,
+    "video_name": "output-2024-01-24T223831.612",
+    "param_file": ".\\processed_test_videos\\fake\\output-2024-01-24T223831.612\\all_frame_params.npz"
+  },
+  {
+    "prediction": "Real",
+    "predicted_class": 0,
+    "confidence": 100.0,
+    "prob_real": 100.0,
+    "prob_fake": 8.341172829954484e-14,
+    "num_frames_analyzed": 60,
+    "video_name": "-_3E3GBXAUc",
+    "param_file": ".\\processed_test_videos\\real\\-_3E3GBXAUc\\all_frame_params.npz"
+  },
+  {
+    "prediction": "Real",
+    "predicted_class": 0,
+    "confidence": 99.91414546966553,
+    "prob_real": 99.91414546966553,
+    "prob_fake": 0.08585606119595468,
+    "num_frames_analyzed": 53,
+    "video_name": "_04E5ylO7Vc",
+    "param_file": ".\\processed_test_videos\\real\\_04E5ylO7Vc\\all_frame_params.npz"
+  },
+  {
+    "prediction": "Real",
+    "predicted_class": 0,
+    "confidence": 100.0,
+    "prob_real": 100.0,
+    "prob_fake": 2.775395831209525e-14,
+    "num_frames_analyzed": 60,
+    "video_name": "_0ma-BkictM",
+    "param_file": ".\\processed_test_videos\\real\\_0ma-BkictM\\all_frame_params.npz"
+  },
+  {
+    "prediction": "Real",
+    "predicted_class": 0,
+    "confidence": 100.0,
+    "prob_real": 100.0,
+    "prob_fake": 2.2499070662096443e-08,
+    "num_frames_analyzed": 54,
+    "video_name": "_0xo7EkS0tE",
+    "param_file": ".\\processed_test_videos\\real\\_0xo7EkS0tE\\all_frame_params.npz"
+  },
+  {
+    "prediction": "Real",
+    "predicted_class": 0,
+    "confidence": 100.0,
+    "prob_real": 100.0,
+    "prob_fake": 2.7675625347001187e-06,
+    "num_frames_analyzed": 60,
+    "video_name": "_2-lyj3sr2E",
+    "param_file": ".\\processed_test_videos\\real\\_2-lyj3sr2E\\all_frame_params.npz"
+  },
+  {
+    "prediction": "Real",
+    "predicted_class": 0,
+    "confidence": 100.0,
+    "prob_real": 100.0,
+    "prob_fake": 1.32786563966647e-06,
+    "num_frames_analyzed": 52,
+    "video_name": "_2dHBPpZAEw",
+    "param_file": ".\\processed_test_videos\\real\\_2dHBPpZAEw\\all_frame_params.npz"
+  },
+  {
+    "prediction": "Real",
+    "predicted_class": 0,
+    "confidence": 100.0,
+    "prob_real": 100.0,
+    "prob_fake": 3.910715880902499e-12,
+    "num_frames_analyzed": 57,
+    "video_name": "_2gAmbFniPE",
+    "param_file": ".\\processed_test_videos\\real\\_2gAmbFniPE\\all_frame_params.npz"
+  },
+  {
+    "prediction": "Real",
+    "predicted_class": 0,
+    "confidence": 99.99996423721313,
+    "prob_real": 99.99996423721313,
+    "prob_fake": 3.354875843797345e-05,
+    "num_frames_analyzed": 50,
+    "video_name": "_2hHyXxsyFo",
+    "param_file": ".\\processed_test_videos\\real\\_2hHyXxsyFo\\all_frame_params.npz"
+  },
+  {
+    "prediction": "AI-Generated",
+    "predicted_class": 1,
+    "confidence": 99.54609274864197,
+    "prob_real": 0.4539013374596834,
+    "prob_fake": 99.54609274864197,
+    "num_frames_analyzed": 40,
+    "video_name": "_2siVCR5EBs",
+    "param_file": ".\\processed_test_videos\\real\\_2siVCR5EBs\\all_frame_params.npz"
+  },
+  {
+    "prediction": "Real",
+    "predicted_class": 0,
+    "confidence": 100.0,
+    "prob_real": 100.0,
+    "prob_fake": 4.282170829679379e-13,
+    "num_frames_analyzed": 60,
+    "video_name": "_3CsQJ6XpHo",
+    "param_file": ".\\processed_test_videos\\real\\_3CsQJ6XpHo\\all_frame_params.npz"
+  },
+  {
+    "prediction": "Real",
+    "predicted_class": 0,
+    "confidence": 100.0,
+    "prob_real": 100.0,
+    "prob_fake": 2.5026911099068627e-08,
+    "num_frames_analyzed": 53,
+    "video_name": "_3l3WdE36TI",
+    "param_file": ".\\processed_test_videos\\real\\_3l3WdE36TI\\all_frame_params.npz"
+  },
+  {
+    "prediction": "Real",
+    "predicted_class": 0,
+    "confidence": 100.0,
+    "prob_real": 100.0,
+    "prob_fake": 2.4131670511677583e-12,
+    "num_frames_analyzed": 60,
+    "video_name": "_3LaUJ9loZ0",
+    "param_file": ".\\processed_test_videos\\real\\_3LaUJ9loZ0\\all_frame_params.npz"
+  },
+  {
+    "prediction": "Real",
+    "predicted_class": 0,
+    "confidence": 65.2419924736023,
+    "prob_real": 65.2419924736023,
+    "prob_fake": 34.758010506629944,
+    "num_frames_analyzed": 37,
+    "video_name": "_3qg-oAr7b0",
+    "param_file": ".\\processed_test_videos\\real\\_3qg-oAr7b0\\all_frame_params.npz"
+  },
+  {
+    "prediction": "Real",
+    "predicted_class": 0,
+    "confidence": 100.0,
+    "prob_real": 100.0,
+    "prob_fake": 5.995303832877368e-15,
+    "num_frames_analyzed": 60,
+    "video_name": "_3TcyjX2WQo",
+    "param_file": ".\\processed_test_videos\\real\\_3TcyjX2WQo\\all_frame_params.npz"
+  },
+  {
+    "prediction": "Real",
+    "predicted_class": 0,
+    "confidence": 100.0,
+    "prob_real": 100.0,
+    "prob_fake": 1.4881933786255854e-15,
+    "num_frames_analyzed": 61,
+    "video_name": "_3U9TMb-jFI",
+    "param_file": ".\\processed_test_videos\\real\\_3U9TMb-jFI\\all_frame_params.npz"
+  },
+  {
+    "prediction": "Real",
+    "predicted_class": 0,
+    "confidence": 91.7402446269989,
+    "prob_real": 91.7402446269989,
+    "prob_fake": 8.25975313782692,
+    "num_frames_analyzed": 25,
+    "video_name": "_3XAZZnZLlc",
+    "param_file": ".\\processed_test_videos\\real\\_3XAZZnZLlc\\all_frame_params.npz"
+  },
+  {
+    "prediction": "Real",
+    "predicted_class": 0,
+    "confidence": 100.0,
+    "prob_real": 100.0,
+    "prob_fake": 3.33762903772394e-14,
+    "num_frames_analyzed": 60,
+    "video_name": "_3yfcMBAA38",
+    "param_file": ".\\processed_test_videos\\real\\_3yfcMBAA38\\all_frame_params.npz"
+  },
+  {
+    "prediction": "Real",
+    "predicted_class": 0,
+    "confidence": 100.0,
+    "prob_real": 100.0,
+    "prob_fake": 3.136154045587828e-14,
+    "num_frames_analyzed": 60,
+    "video_name": "_4FD-NdYYww",
+    "param_file": ".\\processed_test_videos\\real\\_4FD-NdYYww\\all_frame_params.npz"
+  },
+  {
+    "prediction": "AI-Generated",
+    "predicted_class": 1,
+    "confidence": 66.8668806552887,
+    "prob_real": 33.133116364479065,
+    "prob_fake": 66.8668806552887,
+    "num_frames_analyzed": 43,
+    "video_name": "_4i56CbdQcE",
+    "param_file": ".\\processed_test_videos\\real\\_4i56CbdQcE\\all_frame_params.npz"
+  },
+  {
+    "prediction": "Real",
+    "predicted_class": 0,
+    "confidence": 76.22073292732239,
+    "prob_real": 76.22073292732239,
+    "prob_fake": 23.779264092445374,
+    "num_frames_analyzed": 16,
+    "video_name": "_5BYXzgVU9c",
+    "param_file": ".\\processed_test_videos\\real\\_5BYXzgVU9c\\all_frame_params.npz"
+  },
+  {
+    "prediction": "Real",
+    "predicted_class": 0,
+    "confidence": 100.0,
+    "prob_real": 100.0,
+    "prob_fake": 5.406357139747797e-07,
+    "num_frames_analyzed": 60,
+    "video_name": "_5cvAd0KAk4",
+    "param_file": ".\\processed_test_videos\\real\\_5cvAd0KAk4\\all_frame_params.npz"
+  },
+  {
+    "prediction": "Real",
+    "predicted_class": 0,
+    "confidence": 100.0,
+    "prob_real": 100.0,
+    "prob_fake": 7.983072710843783e-14,
+    "num_frames_analyzed": 59,
+    "video_name": "_5dyLrtc5fQ",
+    "param_file": ".\\processed_test_videos\\real\\_5dyLrtc5fQ\\all_frame_params.npz"
+  },
+  {
+    "prediction": "Real",
+    "predicted_class": 0,
+    "confidence": 100.0,
+    "prob_real": 100.0,
+    "prob_fake": 4.346717122540321e-14,
+    "num_frames_analyzed": 60,
+    "video_name": "__lt03EF4ao",
+    "param_file": ".\\processed_test_videos\\real\\__lt03EF4ao\\all_frame_params.npz"
+  },
+  {
+    "prediction": "Real",
+    "predicted_class": 0,
+    "confidence": 90.64788818359375,
+    "prob_real": 90.64788818359375,
+    "prob_fake": 9.35211181640625,
+    "num_frames_analyzed": 21,
+    "video_name": "__NrybzYzUg",
+    "param_file": ".\\processed_test_videos\\real\\__NrybzYzUg\\all_frame_params.npz"
+  },
+  {
+    "prediction": "Real",
+    "predicted_class": 0,
+    "confidence": 100.0,
+    "prob_real": 100.0,
+    "prob_fake": 1.577703419890561e-14,
+    "num_frames_analyzed": 60,
+    "video_name": "__PYrzYbzKE",
+    "param_file": ".\\processed_test_videos\\real\\__PYrzYbzKE\\all_frame_params.npz"
+  },
+  {
+    "prediction": "Real",
+    "predicted_class": 0,
+    "confidence": 84.63939428329468,
+    "prob_real": 84.63939428329468,
+    "prob_fake": 15.360599756240845,
+    "num_frames_analyzed": 24,
+    "video_name": "__u6odV5hrI",
+    "param_file": ".\\processed_test_videos\\real\\__u6odV5hrI\\all_frame_params.npz"
+  },
+  {
+    "prediction": "Real",
+    "predicted_class": 0,
+    "confidence": 100.0,
+    "prob_real": 100.0,
+    "prob_fake": 1.1522136241941044e-14,
+    "num_frames_analyzed": 60,
+    "video_name": "__U_scuxNlQ",
+    "param_file": ".\\processed_test_videos\\real\\__U_scuxNlQ\\all_frame_params.npz"
+  },
+  {
+    "prediction": "Real",
+    "predicted_class": 0,
+    "confidence": 72.70760536193848,
+    "prob_real": 72.70760536193848,
+    "prob_fake": 27.292394638061523,
+    "num_frames_analyzed": 37,
+    "video_name": "__vOysOPoCY",
+    "param_file": ".\\processed_test_videos\\real\\__vOysOPoCY\\all_frame_params.npz"
+  },
+  {
+    "prediction": "AI-Generated",
+    "predicted_class": 1,
+    "confidence": 96.6420590877533,
+    "prob_real": 3.357936814427376,
+    "prob_fake": 96.6420590877533,
+    "num_frames_analyzed": 34,
+    "video_name": "__vzEs2wzdQ",
+    "param_file": ".\\processed_test_videos\\real\\__vzEs2wzdQ\\all_frame_params.npz"
+  },
+  {
+    "prediction": "Real",
+    "predicted_class": 0,
+    "confidence": 100.0,
+    "prob_real": 100.0,
+    "prob_fake": 1.1462437783335035e-12,
+    "num_frames_analyzed": 58,
+    "video_name": "__wsytoYy3Q",
+    "param_file": ".\\processed_test_videos\\real\\__wsytoYy3Q\\all_frame_params.npz"
+  }
+]
