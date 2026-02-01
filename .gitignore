@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+.github
 
 # Project folders
 dataset/
@@ -14,6 +15,7 @@ test_dataset/
 data/models/smplx/
 data/network_weights/
 data/checkpoints/model.ckpt
+explainability
 
 
 # OS

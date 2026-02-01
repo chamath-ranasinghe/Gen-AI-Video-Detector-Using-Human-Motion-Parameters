@@ -246,6 +246,16 @@ def main():
     parser = argparse.ArgumentParser(
         description='Extract SMPL-X parameters from video frames'
     )
+    
+    # Single video processing
+    parser.add_argument('--video', type=str, default=None,
+                       help='Path to a single video file to process (alternative to batch processing)')
+    parser.add_argument('--video-label', type=str, choices=['real', 'fake'], default='fake',
+                       help='Label for the single video (real or fake)')
+    parser.add_argument('--output', type=str, default=None,
+                       help='Output folder for single video (if not specified, auto-generated from video name)')
+    
+    # Processing options
     parser.add_argument('--frame-rate', type=int, default=5,
                        help='Extract every Nth frame (1=all frames, 5=every 5th frame)')
     parser.add_argument('--max-frames', type=int, default=None,
@@ -279,6 +289,118 @@ def main():
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     if not torch.cuda.is_available():
         logger.warning('CUDA not available, using CPU (will be slow)')
+    
+    model = None  # Will be initialized on first use
+    
+    # ===== SINGLE VIDEO MODE =====
+    if args.video:
+        logger.info("="*70)
+        logger.info("SINGLE VIDEO PROCESSING MODE")
+        logger.info("="*70)
+        
+        if not osp.exists(args.video):
+            logger.error(f"Video file not found: {args.video}")
+            sys.exit(1)
+        
+        # Determine output folder
+        if args.output:
+            video_output_folder = osp.expanduser(osp.expandvars(args.output))
+        else:
+            # Auto-generate output folder name
+            video_name = osp.splitext(osp.basename(args.video))[0]
+            output_base = './processed_single_videos'
+            video_output_folder = osp.join(output_base, args.video_label, video_name)
+        
+        os.makedirs(video_output_folder, exist_ok=True)
+        
+        logger.info(f"Processing video: {args.video}")
+        logger.info(f"Label: {args.video_label}")
+        logger.info(f"Output folder: {video_output_folder}")
+        
+        # Create subfolders
+        frames_folder = osp.join(video_output_folder, 'frames')
+        params_folder = osp.join(video_output_folder, 'params')
+        os.makedirs(frames_folder, exist_ok=True)
+        os.makedirs(params_folder, exist_ok=True)
+        
+        try:
+            # Step 1: Extract frames
+            logger.info("Step 1: Extracting frames from video")
+            frame_paths = extract_frames(
+                args.video,
+                frames_folder,
+                frame_rate=args.frame_rate,
+                max_frames=args.max_frames
+            )
+            
+            if len(frame_paths) == 0:
+                logger.error("No frames extracted!")
+                sys.exit(1)
+            
+            # Step 2: Detect bodies
+            logger.info("Step 2: Detecting human bodies in frames")
+            img_paths, bboxes = detect_bodies_in_frames(
+                frame_paths,
+                device,
+                batch_size=args.batch_size,
+                min_score=args.min_score
+            )
+            
+            if len(img_paths) == 0:
+                logger.warning("No bodies detected in any frames!")
+                sys.exit(1)
+            
+            # Step 3: Load SMPL-X model
+            logger.info("Step 3: Loading SMPL-X model")
+            EXPOSE_CONFIG = './data/conf.yaml'
+            cfg.merge_from_file(EXPOSE_CONFIG)
+            cfg.merge_from_list(args.exp_opts)
+            cfg.datasets.body.batch_size = args.batch_size
+            cfg.is_training = False
+            
+            use_face_contour = cfg.datasets.use_face_contour
+            set_face_contour(cfg, use_face_contour=use_face_contour)
+            
+            model = SMPLXNet(cfg)
+            model = model.to(device=device)
+            
+            output_folder_cfg = cfg.output_folder
+            checkpoint_folder = osp.join(output_folder_cfg, cfg.checkpoint_folder)
+            checkpointer = Checkpointer(model, save_dir=checkpoint_folder, 
+                                       pretrained=cfg.pretrained)
+            checkpointer.load_checkpoint()
+            logger.info("✓ SMPL-X model loaded")
+            
+            # Step 4: Create dataloader
+            logger.info("Step 4: Preparing data for SMPL-X processing")
+            dloader = process_frames_with_smplx(img_paths, bboxes, cfg, device)
+            
+            # Step 5: Extract parameters
+            logger.info("Step 5: Extracting SMPL-X parameters")
+            with threadpool_limits(limits=1):
+                all_params = extract_smplx_parameters(dloader, model, device, params_folder)
+            
+            # Cleanup frames if requested
+            if not args.keep_frames:
+                logger.info("Cleaning up frame images")
+                shutil.rmtree(frames_folder)
+            
+            logger.info(f"✓ Successfully processed video!")
+            logger.info(f"✓ Extracted parameters for {len(all_params)} frames")
+            logger.info(f"✓ Output saved to: {video_output_folder}")
+            
+        except Exception as e:
+            logger.error(f"Error processing video: {e}")
+            import traceback
+            traceback.print_exc()
+            sys.exit(1)
+        
+        return  # Exit after single video processing
+    
+    # ===== BATCH MODE (original behavior) =====
+    logger.info("="*70)
+    logger.info("BATCH PROCESSING MODE")
+    logger.info("="*70)
     
     # Create output directory structure
     output_base = osp.expanduser(osp.expandvars(OUTPUT_BASE_FOLDER))
