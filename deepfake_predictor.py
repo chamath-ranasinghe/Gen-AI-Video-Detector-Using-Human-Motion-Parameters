@@ -30,6 +30,11 @@ from loguru import logger
 # Import from the training script
 from deepfake_detector import DeepfakeDetectorLSTM, DeepfakeDetectorTransformer
 
+# Visualization imports
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.metrics import confusion_matrix, classification_report, roc_curve, auc
+
 # Import SMPL-X processing components
 try:
     from expose.data.datasets import ImageFolderWithBoxes
@@ -540,6 +545,80 @@ def batch_predict(model_path: str, params_dir: str, model_type: str = 'lstm',
     print(f"\nAverage Confidence: {avg_confidence:.2f}%")
     
     print("="*70)
+    
+    # ===== CONFUSION MATRIX SECTION =====
+    if true_label:
+        print("\n" + "="*70)
+        print("CONFUSION MATRIX & CLASSIFICATION METRICS")
+        print("="*70)
+        
+        # Collect true and predicted labels
+        true_labels = []
+        pred_labels = []
+        
+        for result in results:
+            predicted_label = 'fake' if result['predicted_class'] == 1 else 'real'
+            pred_labels.append(predicted_label)
+            true_labels.append(true_label.lower())
+        
+        # Convert to numeric for confusion matrix
+        y_true_numeric = np.array([1 if label == 'fake' else 0 for label in true_labels])
+        y_pred_numeric = np.array([1 if label == 'fake' else 0 for label in pred_labels])
+        
+        # Compute confusion matrix
+        cm = confusion_matrix(y_true_numeric, y_pred_numeric, labels=[0, 1])
+        
+        # Create detailed report
+        report = classification_report(
+            y_true_numeric,
+            y_pred_numeric,
+            labels=[0, 1],
+            target_names=['REAL', 'FAKE'],
+            digits=3,
+            zero_division=0,
+        )
+        
+        print("\nCONFUSION MATRIX:")
+        print("-"*40)
+        print("                Predicted")
+        print("                REAL  FAKE")
+        print(f"Actual REAL      {cm[0,0]:<4} {cm[0,1]:<4}")
+        print(f"       FAKE      {cm[1,0]:<4} {cm[1,1]:<4}")
+        
+        print("\nCLASSIFICATION METRICS:")
+        print("-"*40)
+        print(report)
+        
+        # Calculate additional metrics
+        tn, fp, fn, tp = cm.ravel()
+        specificity = tn / (tn + fp) if (tn + fp) > 0 else 0
+        sensitivity = tp / (tp + fn) if (tp + fn) > 0 else 0
+        
+        print(f"Specificity (True Negative Rate): {specificity:.3f}")
+        print(f"Sensitivity (True Positive Rate): {sensitivity:.3f}")
+        print("="*70)
+        
+        # Visualize confusion matrix if matplotlib is available
+        try:
+            plt.figure(figsize=(8, 6))
+            sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', 
+                       xticklabels=['REAL', 'FAKE'],
+                       yticklabels=['REAL', 'FAKE'],
+                       cbar_kws={'label': 'Count'})
+            plt.xlabel('Predicted Label')
+            plt.ylabel('True Label')
+            plt.title(f'Confusion Matrix (True Label: {true_label.upper()})')
+            plt.tight_layout()
+            
+            # Save confusion matrix
+            cm_path = osp.join(osp.dirname(model_path), 'confusion_matrix.png')
+            plt.savefig(cm_path, dpi=150, bbox_inches='tight')
+            print(f"\nConfusion matrix saved to: {cm_path}")
+            plt.close()
+        except Exception as e:
+            print(f"\nCould not save confusion matrix visualization: {e}")
+    
+    # ===== END CONFUSION MATRIX SECTION =====
     
     # Detailed results
     print("\nDETAILED RESULTS:")
