@@ -107,3 +107,5 @@ python deepfake_predictor.py --input path/to/video.mp4 --output out.json
 **Notes on PyTorch & CUDA**
 
 - If you have an NVIDIA GPU and want GPU acceleration, visit https://pytorch.org and select the correct CUDA-enabled wheel/command for your OS and CUDA driver version. Install that first, then install the remaining requirements.
+
+5. If you run into issues with installing PyTorch try installing it through the wheels by searching at https://pytorch.org/get-started/previous-versions/
